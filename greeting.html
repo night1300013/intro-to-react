@@ -20,9 +20,20 @@
         }
       }
 
+      class HelloMessage extends React.Component {
+        render() {
+          return (
+            <div>
+              Hello { this.props.name }
+            </div>
+          );
+        }
+      }
       ReactDOM.render(
-        <Greeting />, document.getElementById('app')
+        //<Greeting />, document.getElementById('app')
+        <HelloMessage name="Bloccer" />, document.getElementById('app')
       );
+
     </script>
   </body>
 
